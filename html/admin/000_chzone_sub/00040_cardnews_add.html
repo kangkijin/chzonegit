@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="재테크의 모든 것 - 크존">
+		<meta name="copyright" content="크존">
+		<meta property="og:site_name" content="재테크의 모든 것">
+		<meta property="og:title" content="재테크의 모든 것 - 크존">
+		<meta property="og:description" content="재테크의 모든 정보">
+		<meta name="keywords" content="재테크존,크존">
+		<meta name="description" content="재테크의 모든 정보">
+		<meta property="og:image" content="../../../images/common/img_metacover.jpg">
+		<title>크존</title>
+		
+		<!-- favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- //favicon -->
+		
+		<!-- [pp] icon -->
+		<link rel="stylesheet" href="../../../src/font-awesome/css/font-awesome.min.css">
+		<!-- [pp] font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+		<!-- [pp] //font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link rel="stylesheet" href="../../../src/remixicon/fonts/remixicon.css">
+		<!-- [pp] //icon -->
+		
+		<!-- css -->
+		<link rel="stylesheet" href="../../../src/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/AdminLTE.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/_all-skins.min.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="../../../src/dataTables/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="../../../src/dataTables/css/select.dataTables.min.css">
+		<link rel="stylesheet" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" href="../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+		<!-- //css -->
+
+		<!-- js -->
+		<script src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script src="../../../src/jquery/js/html5shiv.js"></script>
+		<script src="../../../src/jquery/js/IE9.js"></script>
+		<script src="../../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../../src/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../src/bootstrap-adminLTE/js/adminlte.js"></script>
+		<script src="../../../src/bootstrap-adminLTE/js/demo.js"></script>
+		<script src="../../../src/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="../../../src/dataTables/js/jquery.dataTables.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.bootstrap.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.buttons.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.select.min.js"></script>
+		<script src="../../../src/dataTables/js/jszip.min.js"></script>
+		<script src="../../../src/dataTables/js/pdfmake.min.js"></script>
+		<script src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../../src/select2/js/select2.min.js"></script>
+		<script src="../../../src/apexchart/js/apexcharts.js"></script>
+		<script src="../../../js/admin/pp_ui.js"></script>
+		<!-- //js -->
+	</head>
+
+	<body class="hold-transition sidebar-mini">
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/IE9.js"></script>
+		<script src="../../js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- [pp] 로딩중 -->
+		<div id="loading">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."/><br/>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 -->
+
+		<div class="wrapper">
+			<!--[pp] header -->
+			<header class="main-header">
+				<!--[pp] logo -->
+				<h1>
+					<a href="javascript:void(0);" class="logo">
+						<!--[pp] 기본 로고 -->
+						<span class="logo-lg">
+							<img src="../../../images/admin/header_logo.png" alt="한양대학교 ERICA 관리자페이지">
+						</span>
+						<!--[pp] //기본 로고 -->
+						<!--[pp] 메뉴 접힌 상태에서 보여줄 로고 -->
+						<span class="logo-mini">
+							<img src="../../../images/admin/minilogo.png" alt="한양대학교 ERICA 관리자페이지">
+						</span>
+						<!--[pp] //메뉴 접힌 상태에서 보여줄 로고 -->
+					</a>
+				</h1>
+				<!--[pp] //logo -->
+				<nav class="navbar navbar-static-top">
+					<!--[pp] 햄버거버튼 -->
+					<a href="javascript:void(0);" class="sidebar-toggle" data-toggle="push-menu" role="button">
+						<span class="sr-only">주요메뉴 열고닫기</span>
+					</a>
+					<!--[pp] //햄버거버튼 -->
+					<!--[pp] tnb -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<li class="hidden-xs pp_username">
+								<a href="javascript:void(0);">
+									<i class="fa fa-user"></i>
+									<span class="pp_user_txt">최고관리자님</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="pp_client_link">
+									<i class="fa fa-user-times"></i>
+									<span class="hidden-xs pp_user_txt">신분삭제</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="pp_client_link">
+									<i class="fa fa-television"></i>
+									<span class="hidden-xs pp_user_txt">학생화면 바로가기</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<i class="fa fa-unlock-alt"></i>
+									<span class="hidden-xs pp_user_txt">LOGOUT</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--[pp] //tnb -->
+				</nav>
+			</header>
+			<!--[pp] //header -->
+			<!--[pp] gnb -->
+			<aside class="main-sidebar">
+				<section class="sidebar">
+					<div class="user-panel">
+						<div class="pull-left image">
+							<img src="../../../images/admin/user_img.png" class="img-circle" alt="User Image">
+						</div>
+						<div class="pull-left info">
+							<p>최고 관리자님</p>
+							<span>
+								<i class="fa fa-calendar"></i>&nbsp;최종접속일: 19-01-01
+							</span>
+						</div>
+					</div>
+					<ul class="sidebar-menu" data-widget="tree">
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-settings-3-line"></i>포탈 관리
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="javascript:void(0);">메뉴 관리</a></li>
+								<li><a href="javascript:void(0);">콘텐츠 관리</a></li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-window-line"></i>사이트 관리
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="javascript:void(0);">권한 관리</a></li>
+								<li><a href="javascript:void(0);">사용자별 권한 관리</a></li>
+								<li><a href="javascript:void(0);">외부 사용자 등록</a></li>
+								<li><a href="javascript:void(0);">로그인 이력</a></li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-contacts-book-line"></i>교육연구단(팀) 소개 관리
+							</a>
+							<ul class="treeview-menu">
+								<li class="treeview">
+									<a href="javascript:void(0);">BK21 교육연구단(팀) 소개 관리</a>
+								</li>
+								<li class="treeview">
+									<a href="javascript:void(0);">게시판</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-calendar-event-line"></i>학업활동관리
+							</a>
+							<ul class="treeview-menu">
+								<li class="treeview">
+									<a href="javascript:void(0);">
+										교과목 이수체계도 관리
+									</a>
+								</li>
+								<li class="treeview">
+									<a href="javascript:void(0);">
+										교과관리
+									</a>
+								</li>
+								<li class="treeview">
+									<a href="javascript:void(0);">
+										교과목 이수현황
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-edit-line"></i>BK21 교육프로그램 관리
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="javascript:void(0);">프로그램 등록</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">프로그램 운영현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">프로그램 결과보고서</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">프로그램 CQI</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-draft-line"></i>마이크로 전공 신청 관리
+							</a>
+						</li>
+						<li class="treeview">
+							<a href="javascript:void(0);">
+								<i class="ri-team-line"></i>커뮤니티 관리
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="javascript:void(0);">공지사항 관리</a></li>
+								<li><a href="javascript:void(0);">Q&amp;A 관리</a></li>
+								<li><a href="javascript:void(0);">FAQ 관리</a></li>
+								<li><a href="javascript:void(0);">자료실 관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			<!--[pp] //gnb -->
+
+		<!--[pp] 본문영역 -->
+			<div class="content-wrapper">
+				<!--[pp] 본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+				<section class="content-header">
+					<h2>카드뉴스 등록</h2>
+					<ol class="breadcrumb">
+						<li><a href="#"><i class="fa fa-home"></i>home</a></li>
+						<li class="active">카드뉴스 등록</li>
+					</ol>
+				</section>
+				<!--[pp] //본문 타이틀 영역/페이지제목,페이지네비게이션 -->
+				<!--[pp] 본문내용영역 -->
+				<section class="content container-fluid">
+					<div class="box box-solid">
+						<div class="box-body">
+							<table class="table table-bordered tbl_row tbl_fixed">
+								<caption>카드뉴스</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">제목<span class="dot_rec va_t"></span></th>
+										<td class="td_input">
+											<input type="text" class="form-control input-md wd_p100" placeholder="제목을 입력하세요." title="제목을 입력하세요.">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">카드뉴스 업로드<span class="dot_rec va_t"></span></th>
+										<td class="td_input">
+											<p class="font_red mg_b5">※ 크기 - 450px X 450px, 확장자 - jpg, png 이미지 파일을 등록해주세요.</p>
+											<div style="max-height: 450px; overflow-y: auto;">
+												<table class="table table-bordered tbl_col tbl_fixed">
+													<caption>카드뉴스</caption>
+													<colgroup>
+														<col style="width: 10%">
+														<col style="width: auto;">
+														<col style="width: 15%;">
+														<col style="width: 15%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col" colspan="2" class="ta_l">
+																<button type="button" class="btn btn-sm btn-info"><i class="fa fa-plus  mg_r5"></i>이미지 추가</button>
+															</th>
+															<th scope="col">순서변경</th>
+															<th scope="col">삭제</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																<button type="button" class="btn btn-sm btn-primary">파일첨부</button>
+															</td>
+															<td>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-up"></i></button>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-down"></i></button>
+															</td>
+															<td>
+																-
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																<div class="img_thumnail">
+																	<img src="../../../images/admin/bg_noattachment.png" alt="예시">
+																</div>
+																<p class="font_15 bold mg_b5">imgname.png</p>
+																<button type="button" class="btn btn-sm btn-primary">파일첨부</button>
+															</td>
+															<td>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-up"></i></button>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-down"></i></button>
+															</td>
+															<td>
+																<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-minus  mg_r5"></i>삭제</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">3</th>
+															<td>
+																<div class="img_thumnail notimg">
+																	<img src="../../../images/admin/img_file.jpg" alt="이미지 없음">
+																</div>
+																<p class="font_15 bold mg_b5">이미지 없을때 이거 사용</p>
+																<button type="button" class="btn btn-sm btn-primary">파일첨부</button>
+															</td>
+															<td>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-up"></i></button>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-down"></i></button>
+															</td>
+															<td>
+																<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-minus  mg_r5"></i>삭제</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">4</th>
+															<td>
+																<div class="img_thumnail notimg">
+																	<img src="../../../images/admin/img_file.jpg" alt="이미지 없음">
+																</div>
+																<p class="font_15 bold mg_b5">이미지 없을때 이거 사용</p>
+																<button type="button" class="btn btn-sm btn-primary">파일첨부</button>
+															</td>
+															<td>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-up"></i></button>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-down"></i></button>
+															</td>
+															<td>
+																<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-minus  mg_r5"></i>삭제</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">5</th>
+															<td>
+																<div class="img_thumnail notimg">
+																	<img src="../../../images/admin/img_file.jpg" alt="이미지 없음">
+																</div>
+																<p class="font_15 bold mg_b5">이미지 없을때 이거 사용</p>
+																<button type="button" class="btn btn-sm btn-primary">파일첨부</button>
+															</td>
+															<td>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-up"></i></button>
+																<button type="button" class="btn btn_arrow_circle"><i class="fa fa-arrow-down"></i></button>
+															</td>
+															<td>
+																<button type="button" class="btn btn-sm btn-danger"><i class="fa fa-minus  mg_r5"></i>삭제</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">공개여부</th>
+										<td>
+											<p class="ad_input_row mg_r20">
+												<input type="radio" name="radio" class="radio" id="radio1" checked>
+												<label class="radio_label" for="radio1">공개</label>
+											</p>
+											<p class="ad_input_row">
+												<input type="radio" name="radio" class="radio" id="radio2">
+												<label class="radio_label" for="radio2">비공개</label>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="box-footer ta_r">
+								<button type="button" class="btn btn-md btn-danger"><i class="fa fa-close  mg_r5"></i>삭제</button>
+								<button type="button" class="btn btn-md btn-primary"><i class="fa fa-check mg_r5"></i>저장</button>
+								<button type="button" class="btn btn-md btn-default"><i class="fa fa-list mg_r5"></i>목록</button>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<!--[pp] //본문내용영역 -->
+			</div>
+			<!--[pp] //본문영역 -->
+			<!--[pp] footer -->
+			<footer class="main-footer">
+				<strong>&copy; 2023 <a href="javascript:void(0);" target="_blank">CHZONE</a>.</strong> ALL RIGHTS RESERVED.
+				<a id="back-to-top" href="javascript:void(0);" class="btn btn-default btn-sm back-to-top" role="button" title="페이지 상단으로 이동" data-toggle="tooltip" data-placement="left">
+					<span class="glyphicon glyphicon-chevron-up"></span>
+				</a>
+			</footer>
+			<!--[pp] //footer -->
+		</div>
+	</body>
+
+</html>

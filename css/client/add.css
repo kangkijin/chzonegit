@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+ /* 레이어 닫기 */
+ .layer_exit {
+	position: absolute; top: 20px; left: 50%;
+	display: inline-block;	
+	width: 50px; height: 50px;
+	font-size: 0; line-height: 0;
+	background: #fff url(../../images/client/common/icon_close_black.png) no-repeat center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+ }
+
+/* GNB 좌우 여백 조절 */
+.header_content > div {
+    padding: 10px 20px;
+}
+.login_wrap.before > p {
+    padding-right: 210px;
+}
+.login_wrap.before .btn_round {
+    width: 180px;
+}
+
+/* 검색결과 없음 */
+.nocnt_box {
+	position: relative;
+	margin: 5px 10px 0;
+	text-align: center;
+	background: #ccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.nocnt_box p {
+	display: inline-block;
+	padding: 45px 5px;
+	max-width: 80%;
+	color: #999; font-weight: 600;
+	font-size: 1.8rem; text-align: center;
+}
+
+/* 상세 레이어 팝업 */
+.popup-layer2 .btn_round {
+    margin-top: 10px;
+}
+.popup-layer2 .editor_area {
+    word-break: break-all;
+}
+
+/* 상담 상세 채팅 입력 */
+.chatinput_box > form {
+    display: flex;
+    width: 100%;
+}
+.chatinput_box > form .form_style {
+    margin-right: 5px;
+    padding: 5px 10px;
+    overflow-y: auto;
+}
+.chatinput_box > form .btn_round {
+    line-height: 34px;  
+}
+
+/* 글씨크기변경 영역 수정 */
+.transform_txtwrap2 .btn_round {
+    display: block;
+    margin: 10px auto 0;
+    width: 100px;
+}
+
+/* 조회수, 날짜 간격 */
+.special_list .cnt .view_date > *:last-child {
+    margin-right: 0;
+}
+
+/* 전문가 상세 안내 문구 */
+.sub_top .bottom_txt {
+    text-align: center;
+}
+
+/* 마이페이지 닉네임 수정 */
+.myinfo_box .name button {
+	position: absolute; right: -60px; top: 3px; 
+}
+.myinfo_box .name .form_style + button {
+	top: 0;
+	line-height: 43px;
+}
+
+@media screen and (max-width:480px) {
+
+    
+    /* 레이어 닫기 480*/
+    .layer_exit {
+       width: 40px; height: 40px;
+       background-size: auto 15px;
+    }
+
+    /* GNB 좌우 여백 조절 480 */
+    .header_content > div {
+        padding: 10px 20px;
+    }
+
+    /* 조회수, 날짜 간격 480 */
+    .special_list .cnt .bottom {
+        padding-right: 155px;
+    }
+    .special_list .cnt .view_date > * {
+        margin-right: 10px;
+    }
+
+    /* 마이페이지 닉네임 수정 480 */
+	.myinfo_box .name button {
+		right: -45px; top: 4px;
+	}
+	.myinfo_box .name .form_style + button {
+        right: -50px;
+		top: 0;
+	}
+
+    /* 트러스트 투자자문 이미지 수정 */
+	.investcompany_list li:last-child .img_wrap img {
+		max-width: 75%;
+	}
+
+}
